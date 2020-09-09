@@ -8,13 +8,13 @@ a response string "VERIFIED" or "INVALID".
 * PayPal will continuously resend this ipn, if a wrong ipn is sent.
 
 IPN configuration :
------------------
-* Initialize IPNMessage constructor with a configuration map containing, mode (sandbox or live) and connection parameters as shown below.
+----------------
+* Initialize IPNMessage constructor with a configuration map containing, mode (sandbox or live) and connection parameters as shown below. sandbox mode (out)
    ```java
 		Map<String,String> configMap = new HashMap<String,String>();
 		
 		// Endpoints are varied depending on whether sandbox OR live is chosen for mode
-		configMap.put("mode", "sandbox");
+		configMap.put("mode live);
 		
 		// Connection Information. These values are defaulted in SDK. If you want to override default values, uncomment it and add your value.
 		// configMap.put("http.ConnectionTimeOut", "5000");
